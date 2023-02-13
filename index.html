@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="validation.js"></script>
+  <title>Passport Application</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="container1">
+
+
+
+      <div class="nav1">
+        <ul>
+          <li><a href="#">Skip to main content &nbsp; |</a></li>
+          <li><a href="#">Screen Reader Access &nbsp;|</a></li>
+          <li><a href="#">Sitemap &nbsp; |</a></li>
+          <li><a href="#">Home &nbsp; |</a></li>
+        </ul>
+      </div>
+
+
+
+
+
+      <div class="nav2">
+        <h3>Passport Application</h3>
+        <h6>PSP Division</h6>
+        <h6>Ministry of External Affairs, Government of India</h6>
+      </div>
+
+
+
+
+      <div class="nav3">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Passport Offices</a></li>
+          <li><a href="#">RTI</a></li>
+          <li><a href="#">Citizen's Charter</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">What's New</a></li>
+        </ul>
+      </div>
+
+
+      <marquee>
+        <h5>
+          Already booked appointment slots freed due to Cancellation or Rescheduling will be released and would be made
+          available for booking by the applicants. These appointments will be released everyday based on their
+          availability and at a fixed time i.e. as per the Tatkaal appointment opening schedule published on the PSP
+          portal. For applicants applying under Tatkaal category, submission of undertaking at PSK is mandatory. Please
+          refer the section 'Tatkaal Passports' under INFORMATION CORNER in the home page of this website.
+        </h5>
+      </marquee>
+
+
+
+
+
+
+      <div class="content">
+        <div class="text">
+          <h3>User Registration</h3><br>
+          <i>Fields marked with asterisk (*) are mandatory</i><br>
+          <b>Important Information:</b> Passport application can be processed at any PSK/POPSK/PSLK WITHIN INDIA
+          irrespective
+          of your residential address.<br>
+          <ul>
+            <li>Click here to check the appointment availability at all PSK/POPSK/PSLK.</li>
+            <li>Click here to know more about Apply Anywhere in India scheme for Passport Services.</li>
+          </ul>
+
+        </div>
+
+
+
+
+        <div class="form">
+          <form action="" name="registration" onsubmit="return val1() && val2() && val3() && val4()">
+
+
+
+            <div class="row">
+              <div class="col-25">
+                <label for="register">Register to apply at*</label>
+              </div>
+              <div class="col-75">
+
+                <input type="radio" class="place" name="place" required>CPV Delhi
+                <input type="radio" class="place" name="place">Passport Office
+              </div>
+            </div>
+
+
+
+
+            <br>
+
+            <div class="row">
+              <div class="col-25">
+                <label for="off">Passport Office *</label>
+              </div>
+              <div class="col-75">
+
+                <select name="off_place" id="off_place" required>
+                  <option value="">Please select</option>
+                  <option value="pune">Pune</option>
+                  <option value="mumbai">Mumbai</option>
+                  <option value="delhi">Delhi</option>
+                  <option value="bangalore">Bangalore</option>
+                </select>
+              </div>
+            </div>
+
+
+
+
+
+            <br>
+
+
+
+
+
+
+            <div class="row">
+              <div class="col-25">
+                <label for="fname">Given Name (Max 45 Characters)* </label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="firstName" class="firstName" required>
+              </div>
+            </div>
+
+
+
+
+
+
+            <br>
+
+            <div class="row">
+              <div class="col-25">
+                <label for="sname">Surname (Max 45 Characters) *</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="lastName" class="lastName" required>
+              </div>
+            </div>
+
+
+
+
+            <br>
+
+            <div class="row">
+              <div class="col-25">
+                <label for="date">Date of Birth (DD/MM/YYYY)*</label>
+              </div>
+              <div class="col-75">
+                <input type="date" required>
+              </div>
+            </div>
+
+
+
+
+
+            <br>
+
+            <div class="row">
+              <div class="col-25">
+                <label for="email">E-mail Id (Max 35 Characters)*</label>
+              </div>
+              <div class="col-75">
+                <input type="email" class="email" name="email" required>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+            <br>
+
+
+
+            <div class="row">
+              <div class="col-25">
+                <label for="yes_no">Do you want your Login Id to be same as E-mail Id?</label>
+              </div>
+              <div class="col-75">
+
+                <input type="radio">Yes
+                <input type="radio">No
+              </div>
+            </div>
+
+
+
+
+
+
+            <br>
+
+
+            <div class="row">
+              <div class="col-25">
+                <label for="login">Login ID *</label>
+              </div>
+              <div class="col-75">
+                <input type="text" class="login" name="login" required>
+              </div>
+            </div>
+
+
+
+
+
+            <br>
+
+            <div class="row">
+              <div class="col-25">
+                <label for="pass">Password *</label>
+              </div>
+              <div class="col-75">
+                <input type="password" class="password" name="password" required>
+              </div>
+            </div>
+
+
+
+
+
+            <br>
+
+
+
+
+
+            <div class="row">
+              <div class="col-25">
+                <label for="cpass">Confirm Password *</label>
+              </div>
+              <div class="col-75">
+                <input type="password" class="conpassword" name="conpassword" required>
+
+              </div>
+            </div>
+
+
+
+
+            <br>
+
+            <div class="row">
+              <div class="col-25">
+                <label for="fname">Hint Question * </label>
+              </div>
+              <div class="col-75">
+                <select name="question" id="question" required>
+                  <option value="">Please select</option>
+                  <option value="city">Birth city</option>
+                  <option value="colour">Favourite Colour</option>
+                  <option value="food">Favourite Food</option>
+                  <option value="school">First School</option>
+                </select>
+              </div>
+            </div>
+
+
+
+
+
+
+
+            <br>
+
+
+
+            <div class="row">
+              <div class="col-25">
+                <label for="hint"> Hint Answer *</label>
+              </div>
+              <div class="col-75">
+                <input type="text" required>
+              </div>
+            </div>
+
+
+
+
+
+
+            <br>
+
+
+            <div class="row_button">
+              <input type="submit" value="Register">
+            </div>
+            
+
+
+
+
+          </form>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
